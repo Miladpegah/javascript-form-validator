@@ -1,1 +1,1 @@
-export { default as requiredVal } from './requiredVal';
+import requiredVal as required from './requiredVal';
