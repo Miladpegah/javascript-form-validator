@@ -1,7 +1,7 @@
 export default const requiredVal = (messageId, value, buttonId, errorClass, checkboxClass = 'checkbox') => {
 	let messageElement = document.getElementById(messageId);
 	let submitButton = document.getElementById(buttonId);
-	let errElements = document.getElementsByClass(errorClass);
+	let errElements = document.getElementsByClassName(errorClass);
 	if (value.length <= 0 || value == false && multichecks(checkboxClass) != true) {
 		submitButton.disabled = true;
 		messageElement.style.color = 'red';
